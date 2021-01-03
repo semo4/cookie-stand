@@ -67,25 +67,40 @@ ul{
 ul li {
  
     padding: 5px;
- 
-
 }
-
-
 
 img{
     width: 425px;
     height: 250px;
-    display:block;
+
+
     
 }
+p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    color:cornflowerblue;
+}
 
-main .container nav ul li {
+main .container nav ul {
     
     padding : 10px;
     font-family: Arial, Helvetica, sans-serif;
     color: crimson;
 }
+main h2:hover{
+    color: red;
+    background-color:white;
+}
+main ul li{
+    color:crimson;
+    font-family: Verdana;
+}
+main ul li:hover{
+    background:cyan;
+}
+
+
 
 
 
