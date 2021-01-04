@@ -111,7 +111,7 @@ objectArray.push(Paris);
 var Lima = new Location('Lima', 2, 16, 4.6);
 objectArray.push(Lima);
 
-// Seatle.renderTableHeader();
+
 
 for(var x = 0; x< objectArray.length ; x++){
     objectArray[x].genaretCustomer();
