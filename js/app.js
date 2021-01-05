@@ -3,7 +3,7 @@
 
 var hourArray= ["6am","7am","8am","9am","10am","11am","12pm","1pm","2pm","3pm","4pm","5pm","6pm","7pm","Daily Location Total"];
 var totalColumn = new Array(hourArray.length).fill(0);
-
+var objectArray = [];
 function Location(name, max, min, avg){
     this.name = name;
     this.max = max;
@@ -12,6 +12,7 @@ function Location(name, max, min, avg){
     this.cookiesHourArray = [];
     this.random = 0;
     this.total = 0 ;
+    objectArray.push(this);
 };
 
 // function for generate customer 
@@ -98,20 +99,13 @@ Location.prototype.renderTableTotal= function(){
 }
 
 
-var objectArray = [];
+
 
 var Seatle = new Location('Seatle', 23, 65, 6.3);
-objectArray.push(Seatle);
 var Tokyo  = new Location('Tokyo ', 3, 24, 1.2);
-objectArray.push(Tokyo);
 var Dubai = new Location('Dubai', 11, 38, 3.7);
-objectArray.push(Dubai);
 var Paris = new Location('Paris', 20, 38, 2.3);
-objectArray.push(Paris);
 var Lima = new Location('Lima', 2, 16, 4.6);
-objectArray.push(Lima);
-
-
 
 for(var x = 0; x< objectArray.length ; x++){
     objectArray[x].genaretCustomer();
