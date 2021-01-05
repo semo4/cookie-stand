@@ -126,7 +126,7 @@ section ul li:hover{
     text-transform:uppercase;
 }
 .container-image{
-    animation: fadeIn ease 5s;
+    animation: fadeIn ease 10s;
     background:lightgoldenrodyellow;
 }
 
@@ -226,8 +226,11 @@ section input[type=submit] {
       background:burlywood;
   }
 
+  .links{
+      width:325px;
+      display:flex;
+  }
   .links ul li{
-    
     list-style-type: "\2605";
     color:burlywood;
     text-decoration: none;
@@ -239,6 +242,18 @@ section input[type=submit] {
     color : black;
     text-decoration: none;
   }
+  .contact-info ul li{
+    list-style-type: "\2605";
+    color:burlywood;
+    text-decoration: none;
+    padding:1px;
+    margin: 1px;
+  }
+
+  .contact-info ul li a {
+    color : black;
+    text-decoration: none;
+  }
 
   .footer-container{
     display: flex;
@@ -247,7 +262,7 @@ section input[type=submit] {
   }
   .footer-container .map{
       float: right;
-      padding-left:500px;
+      padding-left:200px;
   }
 
   .sales-table td, th {
@@ -258,4 +273,8 @@ section input[type=submit] {
   .sales-table table{
     width: 100%;
     border-collapse: collapse;
+  }
+  .sales-table td:hover,th:hover {
+    font-weight: bold;
+  
   }
