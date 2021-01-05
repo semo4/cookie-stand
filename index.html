@@ -1,28 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Salmon Cookies</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="css/style.css">
 
-    </head>
-    <body>
+<head>
+    <title>Salmon Cookies</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 
-        <header>
-            <nav>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <img src="img/salmon.png" alt="">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/sales.html">Sales</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome in Salmon's Cookies</h1>
+
+
+    </section>
+    <section>
+        <div class="containers">
+            <div class="text-img">
+                <div>
+                    <p>A cookie is a baked or cooked food that is typically small, flat and sweet. It usually contains
+                        flour, sugar and some type of oil or fat. It may include other ingredients such as raisins,
+                        oats, chocolate chips, nuts</p>
+                    <p>Our favorite Cookies that can be for all your family </p>
+                    <ul>
+                        <li>chinook</li>
+                        <li>cutter</li>
+                        <li>fish</li>
+                        <li>frosted-cookie</li>
+                        <li>salmon</li>
+                        <li>shirt</li>
+                    </ul>
+                </div>
+
+                <img src="img/family.jpg" alt="">
+            </div>
+            <h1>Some of our Cookies</h1>
+            <div class="container-image">
+                <img src="img/chinook.jpg" alt="" title="chinook">
+                <img src="img/cutter.jpeg" alt="" title="cutter">
+                <img src="img/fish.jpg" alt="" title="fish">
+                <img src="img/frosted-cookie.jpg" alt="" title="frosted-cookie">
+                <img src="img/salmon.png" alt="" title="salmon">
+                <img src="img/shirt.jpg" alt="" title="shirt">
+            </div>
+        </div>
+    </section>
+    <section id="about-us" >
+        <div>
+            <h1>About Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, quaerat nisi sunt ullam quae, accusamus possimus ducimus quos neque facere distinctio laborum adipisci, eligendi laudantium culpa in ex perspiciatis iusto?</p>
+        </div>
+        <table class="location">
+            <tr>
+                <th >Our Locations</th>
+                <th >Open</th>
+                <th >Close</th>
+            </tr>
+
+            <tr>
+                <th>Seatle</th>
+                <td>6 am</td>
+                <td>8 pm</td>
+            </tr>
+            <tr>
+                <th>Tokyo</th>
+                <td>6 am</td>
+                <td>8 pm</td>
+            </tr>
+            <tr>
+                <th>Dubai</th>
+                <td>6 am</td>
+                <td>8 pm</td>
+            </tr>
+            <tr>
+                <th>Paris</th>
+                <td>6 am</td>
+                <td>8 pm</td>
+            </tr>
+            <tr>
+                <th>Lima</th>
+                <td>6 am</td>
+                <td>8 pm</td>
+            </tr>
+        </table>
+    </section>
+    <section id="contact">
+        <div class="container-form">
+            <h1>
+                Contact with us
+            </h1>
+            <div class="form-contr">
+                <form action="#">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your First name..">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email..">
+
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your Phone..">
+
+                    <label for="country">Message</label>
+                    <textarea class="form-control" name="message" rows="5" cols="70" data-rule="required"
+                        data-msg="Please write something for us" placeholder="Message"></textarea>
+
+                    </textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="links">
+                <h3>Pages</3>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="pages/sales.html">Sales</a></li>
+                    <li><a href="index.html"><i class="fas fa-angle-double-right"></i>Home</a></li>
+                    <li><a href="pages/sales.html"><i class="fas fa-angle-double-right"></i>Sales</a></li>
+                    <li><a href="#about-us"><i class="fas fa-angle-double-right"></i>About Us</a></li>
+                    <li><a href="#contact"><i class="fas fa-angle-double-right"></i>Contact Us</a></li>
                 </ul>
-            </nav>
-        </header>
-        <main>
-            <h2>Salmon Cookies</h2>
-            <img src="img/salmon.png">
-            <p>A cookie is a baked or cooked food that is typically small, flat and sweet. It usually contains flour, sugar and some type of oil or fat. It may include other ingredients such as raisins, oats, chocolate chips, nuts</p>
-           
-        </main>
-    
-        <script src="js/app.js"></script>
-    </body>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2690.4419731947937!2d-122.33512414886913!3d47.59809509645667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906bd4d8c9ea53%3A0x2680b28195c190e9!2sCookie&#39;s%20Country%20Chicken!5e0!3m2!1sen!2sjo!4v1609859469181!5m2!1sen!2sjo" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+
 </html>

@@ -54,9 +54,9 @@ Location.prototype.renderLocationList = function(){
 }
 
 // defined the table and it is header
-var perant = document.getElementById("container");
+var perant = document.getElementById("sales-table");
 var table = document.createElement('table');
-table.setAttribute("border","1");
+
 perant.appendChild(table);
 var tableRowHeader = document.createElement('tr');
 table.appendChild(tableRowHeader);

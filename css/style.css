@@ -6,30 +6,31 @@
     margin: 10px;
 }
 body{
- /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f2f5f6+0,e3eaed+37,c8d7dc+100;Grey+3D+%234 */
-background: rgb(242,245,246); /* Old browsers */
-background: -moz-linear-gradient(45deg, rgb(41, 142, 175) 0%, rgb(17, 50, 65) 37%, rgb(110, 201, 231) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(45deg, rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(45deg, rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */background-repeat: no-repeat;
-height:100%;
+
 font-family: Georgia, 'Times New Roman', Times, serif;
 color:black;
 }
 
 header{
     border: 2px solid #7a7a7c;
-    padding : 20px;
-    margin: 20px;
+    padding : 2px;
+    height: 80px;
     background: #000;
     border-radius: 10px;
     
 }
-
-
+header img{
+    position: relative;
+    top: -30px;
+    left: 15%;
+    width: 150px;
+    height: 50px;
+}
 
 nav ul li {
-    
+    position: relative;
+    left: 30%;
+    top: -100px;
     display: inline;
     padding : 10px;
     font-family: Arial, Helvetica, sans-serif;
@@ -72,9 +73,6 @@ ul li {
 img{
     width: 425px;
     height: 250px;
-
-
-    
 }
 p{
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -82,25 +80,182 @@ p{
     color:cornflowerblue;
 }
 
-main .container nav ul {
+section .containers nav ul {
     
     padding : 10px;
     font-family: Arial, Helvetica, sans-serif;
     color: crimson;
 }
-main h2:hover{
+section h2:hover{
     color: red;
-    background-color:white;
+    background-color:rgb(112, 112, 112);
 }
-main ul li{
+section ul li{
     color:crimson;
     font-family: Verdana;
 }
-main ul li:hover{
+section ul li:hover{
     background:cyan;
+}
+
+.text-img{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    animation: fadeIn ease 5s;
+}
+.text-img img{
+    width: 650px;
+    height: 450px;
+
+}
+.text-img ul li {
+   list-style-type: "\2605";
+   color:burlywood;
+
+}
+.text-img ul li:hover {
+    list-style-type:"\2605";
+    background:burlywood;
+    color:black;
+ 
+ }
+
+ h1{
+    text-align:center;
+    text-transform:uppercase;
+}
+.container-image{
+    animation: fadeIn ease 5s;
+    background:lightgoldenrodyellow;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  .location, td, th {
+    border: 1px solid black;
+    font-size: 20px;
+
+  }
+  .location td:hover,th:hover {
+    font-weight: bold;
+    background-size: cover;
+    background-image:url("../img/images.jpg") ;
+  }
+  
+  .location {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .form-contr{
+    position: relative;
+   
+    width: 50%;
+    align-items: center;
+    justify-items: center;
+    left: 25%;
+   
 }
 
 
 
+section input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  section input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
 
+  section input[type=tel], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+section input[type=submit] {
+    width: 100%;
+    background-color: #a0710c;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  section  input[type=submit]:hover {
+    background-color: #a0710c63;
+  }
+  section textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
 
+  footer{
+      padding:0;
+      margin: 0;
+
+      background:burlywood;
+  }
+
+  .links ul li{
+    
+    list-style-type: "\2605";
+    color:burlywood;
+    text-decoration: none;
+    padding:1px;
+    margin: 1px;
+  }
+
+  .links ul li a {
+    color : black;
+    text-decoration: none;
+  }
+
+  .footer-container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  .footer-container .map{
+      float: right;
+      padding-left:500px;
+  }
+
+  .sales-table td, th {
+    border: 1px solid black;
+    font-size: 20px;
+
+  }
+  .sales-table table{
+    width: 100%;
+    border-collapse: collapse;
+  }
