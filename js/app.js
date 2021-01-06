@@ -131,5 +131,7 @@ function addNewLocation(event){
     row.remove();
 }
 
+
+
 renderTableTotal();
 
