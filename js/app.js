@@ -85,11 +85,14 @@ Location.prototype.renderTableData = function(){
 }
 
 // the table footer  
-Location.prototype.renderTableTotal= function(){
+function renderTableTotal(){
+    var tablefootData = document.createElement('tfoot');
+    tablefootData.setAttribute("id","tablefooter");
+    table.appendChild(tablefootData);
     var tableRowData = document.createElement('tr');
-    table.appendChild(tableRowData);
+    tablefootData.appendChild(tableRowData);
     var tableLocationTotal = document.createElement('th');
-    tableLocationTotal.textContent = this.name;
+    tableLocationTotal.textContent = "Totals";
     tableRowData.appendChild(tableLocationTotal);
     for(var c = 0 ;c < totalColumn.length;c++  ){
         var tableTimeTotal = document.createElement('td'); 
@@ -98,21 +101,37 @@ Location.prototype.renderTableTotal= function(){
     }
 }
 
-
-
-
 var Seatle = new Location('Seatle', 23, 65, 6.3);
 var Tokyo  = new Location('Tokyo ', 3, 24, 1.2);
 var Dubai = new Location('Dubai', 11, 38, 3.7);
 var Paris = new Location('Paris', 20, 38, 2.3);
 var Lima = new Location('Lima', 2, 16, 4.6);
-
 for(var x = 0; x< objectArray.length ; x++){
     objectArray[x].genaretCustomer();
     objectArray[x].generateArrayCookiesValue();
     objectArray[x].renderTableData();
 }
 
-var Totals = new Location('Totals', 0, 0, 0);
-Totals.renderTableTotal();
+
+var locationForm = document.getElementById("locationForm");
+locationForm.addEventListener('submit',addNewLocation);
+var newLocation;
+function addNewLocation(event){
+    event.preventDefault();
+    var name = event.target.name.value;
+    var min = event.target.min.value;
+    var max = event.target.max.value;
+    var avg = event.target.avg.value;
+    newLocation = new Location(name, parseInt(min), parseInt(max), parseInt(avg));
+    newLocation.genaretCustomer();
+    newLocation.generateArrayCookiesValue();
+    newLocation.renderTableData();
+    renderTableTotal();
+    var row = document.getElementById("tablefooter");
+    row.remove();
+}
+
+
+
+renderTableTotal();
 
