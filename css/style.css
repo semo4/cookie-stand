@@ -126,8 +126,14 @@ section ul li:hover{
     text-transform:uppercase;
 }
 .container-image{
+
+    text-align: center;
     animation: fadeIn ease 10s;
     background:lightgoldenrodyellow;
+}
+.container-image img{
+  width: 300px;
+  height: 300px;
 }
 
 @keyframes fadeIn {
@@ -262,7 +268,7 @@ section input[type=submit] {
   }
   .footer-container .map{
       float: right;
-      padding-left:200px;
+      padding-left:2%;
   }
 
   .sales-table td, th {
