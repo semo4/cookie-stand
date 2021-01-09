@@ -2,33 +2,62 @@
 <html lang="en">
 
 <head>
-    <title>Salmon Cookies</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-
 </head>
 
 <body>
-
     <header>
         <nav>
-            <img src="img/salmon.png" alt="">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pages/sales.html">Sales</a></li>
-                <li><a href="#about-us">About Us</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
+            <img src="img/logo.png" alt="">
+            <div class="menu-bar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/sales.html">Sales</a></li>
+                    <li><a href="pages/contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <section>
-        <h1>Welcome in Salmon's Cookies</h1>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="img/salmoncookies.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/fish.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/chinook.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/cutter.jpeg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/frosted-cookie.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/shirt.jpg" style="width:100%">
+            </div>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
     </section>
+
     <section>
         <div class="containers">
             <div class="text-img">
-                <div>
+                <div class="text-list">
                     <p>A cookie is a baked or cooked food that is typically small, flat and sweet. It usually contains
                         flour, sugar and some type of oil or fat. It may include other ingredients such as raisins,
                         oats, chocolate chips, nuts</p>
@@ -45,116 +74,81 @@
 
                 <img src="img/family.jpg" alt="">
             </div>
-            <h1>Some of our Cookies</h1>
-            <div class="container-image">
-                <img src="img/chinook.jpg" alt="" title="chinook">
-                <img src="img/cutter.jpeg" alt="" title="cutter">
-                <img src="img/fish.jpg" alt="" title="fish">
-                <img src="img/frosted-cookie.jpg" alt="" title="frosted-cookie">
-                <img src="img/salmon.png" alt="" title="salmon">
-                <img src="img/shirt.jpg" alt="" title="shirt">
-            </div>
-        </div>
-    </section>
-    <section id="about-us" >
-        <div>
-            <h1>About Us</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, quaerat nisi sunt ullam quae, accusamus possimus ducimus quos neque facere distinctio laborum adipisci, eligendi laudantium culpa in ex perspiciatis iusto?</p>
-        </div>
-        <table class="location">
-            <tr>
-                <th >Our Locations</th>
-                <th >Open</th>
-                <th >Close</th>
-            </tr>
-
-            <tr>
-                <th>Seatle</th>
-                <td>6 am</td>
-                <td>8 pm</td>
-            </tr>
-            <tr>
-                <th>Tokyo</th>
-                <td>6 am</td>
-                <td>8 pm</td>
-            </tr>
-            <tr>
-                <th>Dubai</th>
-                <td>6 am</td>
-                <td>8 pm</td>
-            </tr>
-            <tr>
-                <th>Paris</th>
-                <td>6 am</td>
-                <td>8 pm</td>
-            </tr>
-            <tr>
-                <th>Lima</th>
-                <td>6 am</td>
-                <td>8 pm</td>
-            </tr>
-        </table>
-    </section>
-    <section id="contact">
-        <div class="container-form">
-            <h1>
-                Contact with us
-            </h1>
-            <div class="form-contr">
-                <form action="#">
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your First name..">
-
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Your Email..">
-
-                    <label for="phone">Phone</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Your Phone..">
-
-                    <label for="country">Message</label>
-                    <textarea class="form-control" name="message" rows="5" cols="70" data-rule="required"
-                        data-msg="Please write something for us" placeholder="Message"></textarea>
-
-                    </textarea>
-
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-
-
+           
         </div>
     </section>
 
-    <footer>
-        <div class="footer-container">
-            <div class="links">
-                <h3>Pages</3>
+    <section>
+        <div class="descripiton">
+            <h1> Our Location</h1>
+            <p>We have multiple location a round the world</p>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="location">
+            <table>
+                <tr class="table-head">
+                    <th>Location</th>
+                    <th>Opened</th>
+                    <th>Closed</th>
+                </tr>
+                <tr>
+                    <td>Seatle</td>
+                    <td>6:00 am</td>
+                    <td>8:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Dubai</td>
+                    <td>6:00 am</td>
+                    <td>8:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Tokyo</td>
+                    <td>6:00 am</td>
+                    <td>8:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Paris</td>
+                    <td>6:00 am</td>
+                    <td>8:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Lima</td>
+                    <td>6:00 am</td>
+                    <td>8:00 pm</td>
+                </tr>
+            </table>
+        
+        </div>
+    </section>
+
+    <section class="footer-section">
+        <div class="footer">
+            <div class="menu">
+                <h1>Pages</h1>
                 <ul>
-                    <li><a href="index.html"><i class="fas fa-angle-double-right"> Home</i></a></li>
-                    <li><a href="pages/sales.html"><i class="fas fa-angle-double-right"> Sales</i></a></li>
-                    <li><a href="#about-us"><i class="fas fa-angle-double-right"> About Us</i></a></li>
-                    <li><a href="#contact"><i class="fas fa-angle-double-right"> Contact Us</i></a></li>
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i>Home</a></li>
+                    <li><a href="pages/sales.html"><i class="fas fa-chevron-right"></i>Sales</a></li>
+                    <li><a href="pages/contact-us.html"><i class="fas fa-chevron-right"></i>Contact Us</a></li>
                 </ul>
             </div>
-            <div class="contact-info">
-                <h3>Contact Info</3>
+            <div class="social-media">
                 <ul>
-                    <li><a href="#"><i class="fas fa-angle-double-right"> Address : Seatle</i></a></li>
-                    <li><a href="tel:+1-202-555-0155"><i class="fas fa-angle-double-right"> Phone : +1-202-555-0155</i></a></li>
-                    <li><a href="mailto:salmon-cookies@info.com"><i class="fas fa-angle-double-right"> Email : salmon-cookies@info.com</i></a></li>
-                   
+                    <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram-square"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
+                    <li><a href=""><i class="fas fa-at"></i></a></li>
                 </ul>
             </div>
+           
             <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2690.4419731947937!2d-122.33512414886913!3d47.59809509645667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906bd4d8c9ea53%3A0x2680b28195c190e9!2sCookie&#39;s%20Country%20Chicken!5e0!3m2!1sen!2sjo!4v1609859469181!5m2!1sen!2sjo" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
         </div>
-    </footer>
-
-    <script src="js/app.js"></script>
+    </section>
+    <script src="js/slide.js"></script>
 </body>
 
 </html>

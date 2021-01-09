@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
-  
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 </head>
 
@@ -18,7 +16,6 @@
             <div class="menu-bar">
                 <ul>
                     <li><a href="../index.html">Home</a></li>
-                 
                     <li><a href="sales.html">Sales</a></li>
                     <li><a href="contact-us.html">Contact Us</a></li>
                 </ul>
@@ -57,32 +54,57 @@
         </div>
     </section>
 
-  
-    <section class="table-location">
-        <form id="locationForm">
-            <fieldset>
-                <legend>Add new Location</legend>
-                <label for="name">Location Name</label>
-                <input type="text" name="name" id="name" required>
-                <label for="min">Minimum Custmmer</label>
-                <input type="number" name="min" id="min" min ="0" required>
-                <label for="name">Maximum Custmmer</label>
-                <input type="number" name="max" id="max" min ="0"required>
-                <label for="avg">Average Cookies</label>
-                <input type="number" name="avg" id="avg" min="0" step="0.01" required>
-                <input type="submit" value="Add new Location">
-            </fieldset>
-        </form>
-        <h1>Sales Table</h1>
-        <div id="location">
-            
+    <section>
+        <div class="contact-container">
+            <div class="contact-form">
+                <h1>Contact Us</h1>
+                <form action="#">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your First name..">
 
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email..">
+
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your Phone..">
+
+                    <label for="country">Message</label>
+                    <textarea class="form-control" name="message" rows="5" cols="70" data-rule="required"
+                        data-msg="Please write something for us" placeholder="Message"></textarea>
+
+                    </textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="Contact-info">
+                <div class="contact-email">
+                    <h2><i class="fas fa-envelope-square"></i></h2>
+                    <h1> Email Us </h1>
+                     <h1> salmon-cookies@info.com</h1>
+
+                </div>
+                <div class="contact-phone">
+                    <h2><i class="fas fa-phone-square"></i></h2>
+                    <h1> Call Us</h1> 
+                    <h1> +1-202-555-0155</h1>
+                </div>
+                <div class="contact-address">
+                    <h2><i class="fas fa-map-marked-alt"></i></h2>
+                    <h1> Address</h1> 
+                    <h1> Seatle</h1>
+                </div>
+
+            </div>
         </div>
-        
     </section>
-   
 
+ 
 
+ 
 
     <section class="footer-section">
         <div class="footer">
@@ -90,7 +112,6 @@
                 <h1>Pages</h1>
                 <ul>
                     <li><a href="../index.html"><i class="fas fa-chevron-right"></i>Home</a></li>
-                  
                     <li><a href="sales.html"><i class="fas fa-chevron-right"></i>Sales</a></li>
                     <li><a href="contact-us.html"><i class="fas fa-chevron-right"></i>Contact Us</a></li>
                 </ul>
@@ -110,7 +131,6 @@
         </div>
     </section>
     <script src="../js/slide.js"></script>
-    <script src="../js/app.js"></script>
 </body>
 
 </html>
